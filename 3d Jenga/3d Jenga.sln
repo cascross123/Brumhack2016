@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{148695EF-0EB3-863E-44BA-B4617D2FAB53}") = "3d Jenga", "Assembly-CSharp.csproj", "{6FACB114-39EC-4A77-CC08-16E83AC30E4B}"
+EndProject
+Project("{148695EF-0EB3-863E-44BA-B4617D2FAB53}") = "3d Jenga", "Assembly-CSharp-Editor.csproj", "{57F72221-3714-00F3-A71A-157099FE4352}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FACB114-39EC-4A77-CC08-16E83AC30E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FACB114-39EC-4A77-CC08-16E83AC30E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FACB114-39EC-4A77-CC08-16E83AC30E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FACB114-39EC-4A77-CC08-16E83AC30E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57F72221-3714-00F3-A71A-157099FE4352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F72221-3714-00F3-A71A-157099FE4352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F72221-3714-00F3-A71A-157099FE4352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F72221-3714-00F3-A71A-157099FE4352}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
