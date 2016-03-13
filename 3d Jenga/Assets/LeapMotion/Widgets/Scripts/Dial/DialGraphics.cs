@@ -78,10 +78,6 @@ namespace LMWidgets
 		private Transform LabelPrefab;
     [SerializeField]
 		private Transform DialPhysicsOffset;
-    /// <summary>
-    /// How far forward should the dial protrude from the panel.
-    /// </summary>
-    public float DialProtrudenceDistance;
     [SerializeField]
 		private Transform DialPhysics;
     [SerializeField]
@@ -99,6 +95,8 @@ namespace LMWidgets
 		
 		public HilightTextVolume hilightTextVolume;
 		public Color TextColor;
+
+    private bool m_dialLabelsInitilized = false;
 
     private int parseDialString (string valueString){
       int index = -1;
@@ -143,33 +141,21 @@ namespace LMWidgets
       if (m_dialModeBase == null) {
         throw new System.NullReferenceException("Could not find DialModeBase on DialPhysics Object.");
       }
+
+
     }
 
-    /// <summary>
-    /// Move the physics and graphics components into the proper positions.
-    /// </summary>
-    private void setInitialPositions() {
 
-      /// This is a bit hacky, but we're ignoring the positions of the dial elements 
-      /// in the editor and assigning them programatically.
-      /// 
-      /// This is how I found it, but I'm tempted to take a 
-      /// "respect the editor" viewpoint for initial positions
-      /// when it comes to widgets in the future. - @Daniel
-
-      DialCenter.localPosition = new Vector3(0f, 0f, DialRadius + DialProtrudenceDistance);
-      DialPhysicsOffset.localPosition = new Vector3(-(DialRadius + DialProtrudenceDistance) * 10f, 0f, 0f);
-      hilightTextVolume.transform.localPosition += new Vector3(0, 0, DialProtrudenceDistance);
-    }
     		
 		void Start () {
-      setInitialPositions();
+			DialCenter.localPosition = new Vector3(0f, 0f, DialRadius);
+			DialPhysicsOffset.localPosition = new Vector3(-DialRadius * 10f, 0f, 0f);
 			
 		    generateAndLayoutLabels ();
 
 			if( m_dataBinder != null ) {
 				//Set the Dial value based on a string
-        CurrentDialValue = m_dataBinder.GetCurrentData();
+		        CurrentDialValue = m_dataBinder.GetCurrentData();
 				SetPhysicsStep(CurrentDialInt);
 			}
 		}

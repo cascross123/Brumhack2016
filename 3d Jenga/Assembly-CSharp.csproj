@@ -100,7 +100,6 @@
      <Compile Include="Assets\LeapMotion\Scripts\Utils\GrabbingHand.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Utils\LeapRecorder.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Utils\LeapUnityExtensions.cs" />
-     <Compile Include="Assets\LeapMotion\Scripts\Utils\MagneticPinch.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Utils\StretchToScreen.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Utils\TriggerDrawing.cs" />
      <Compile Include="Assets\LeapMotion\Scripts\Utils\Utils.cs" />
@@ -122,9 +121,7 @@
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Interfaces\IDataBoundWidget.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Physics\LeapPhysicsBase.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Physics\LeapPhysicsSpring.cs" />
-     <Compile Include="Assets\LeapMotion\Widgets\Scripts\Scroll\ScrollBase.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Slider\SliderBase.cs" />
-     <Compile Include="Assets\LeapMotion\Widgets\Scripts\SliderActivationManager.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Utils\ExponentialSmoothing.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Utils\FrameRateControls.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
@@ -143,7 +140,8 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
-     <Compile Include="Assets\Scripts\cameraMovement.cs" />
+     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\MagneticPinch.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\LeapMotion\Resources\LeapCG.cginc" />

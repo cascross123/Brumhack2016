@@ -13,19 +13,13 @@ namespace LMWidgets {
 
     // Fires when the data is updated with the most recent data as the payload
     public event EventHandler<EventArg<PayloadType>> DataChangedHandler;
-
-    /// <summary>
-    /// Returns the current system value of the data.
-    /// </summary>
-    /// <remarks>
-    /// In the default implementation of the data-binder this is called every frame (in Update) so it's best to keep
-    /// this implementation light weight.
-    /// </remarks>
+    
+    // Returns the current system value of the data.
+    // In the default implementation of the data-binder this is called every frame (in Update) so it's best to keep
+    // this implementation light weight.
     abstract public PayloadType GetCurrentData();
-
-    /// <summary>
-    /// Set the current system value of the data.
-    /// </summary>
+    
+    // Set the current system value of the data.
     abstract protected void setDataModel(PayloadType value);
 
     // Directly set the current value of the data-model and send out the relevant updates.
